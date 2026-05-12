@@ -3,6 +3,8 @@ import folium
 from folium.plugins import HeatMap, Fullscreen, Draw
 from streamlit_folium import st_folium
 import pandas as pd
+import numpy as np
+import plotly.express as px
 
 # Corporate Branding for Engro
 st.set_page_config(page_title="Engro Energy | Thar Operations", page_icon="⚡", layout="wide")
