@@ -24,8 +24,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- HEADER SECTION ---
-st.markdown('<div class="main-header">🏜️ HUBCO Thar Plant: BD & CSR Strategy Engine</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-header">Spatial Optimization for Corporate Social Responsibility (CSR) Infrastructure in Tharparkar.</div>', unsafe_allow_html=True)
 st.markdown('<div class="architect-tag">Architected by Lokesh Kumar • Native Context: Mithi, Sindh</div>', unsafe_allow_html=True)
 
 # --- DATA SIMULATION (Tharparkar Coordinates: Block II, Islamkot, Mithi region) ---
@@ -44,7 +42,7 @@ df = load_thar_data()
 
 # Key HUBCO Landmarks
 landmarks = {
-    "HUBCO Thar Energy Ltd (TEL)": [24.7977, 70.2808],
+    "Engro Thar Energy Ltd (TEL)": [24.7977, 70.2808],
     "Mithi (Regional Hub)": [24.7370, 69.7971],
     "Islamkot": [24.7946, 70.1804]
 }
@@ -156,7 +154,7 @@ with tab2:
     st.markdown(f"""
     <div class="esg-box">
         <h4>🌱 Thar Foundation Impact Statement</h4>
-        <p>By deploying <b>{ro_count} RO Plants</b> and <b>{solar_count} Solar Microgrids</b>, HUBCO directly elevates the living standards of <b>{lives_impacted:,}</b> residents in the Thar Coal Block II radius, securing vital community goodwill and fulfilling corporate ESG mandates.</p>
+        <p>By deploying <b>{ro_count} RO Plants</b> and <b>{solar_count} Solar Microgrids</b>, Engro directly elevates the living standards of <b>{lives_impacted:,}</b> residents in the Thar Coal Block II radius, securing vital community goodwill and fulfilling corporate ESG mandates.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -219,7 +217,7 @@ with tab3:
     st.info("💡 **Architecture Note:** This UI currently runs on simulated rule-based data. The architecture is designed to seamlessly integrate with a live Multilingual LLM API once the Dhatki dataset is fully compiled.")
 
 with tab4:
-    st.markdown("### 📸 Field Operations (Mithi / Islamkot Hub)")
+    st.markdown("### 📸 Field Operations (Mithi / Islamkot Area)")
     st.write("Field engineers can capture pre-deployment site audits (e.g., groundwater drilling sites) directly into the BD system.")
     site_photo = st.camera_input("Capture Audit Image")
     if site_photo:
@@ -227,7 +225,7 @@ with tab4:
         st.download_button("💾 Save to CSR Report", data=site_photo, file_name="Thar_Audit.png", mime="image/png")
 
 with tab5:
-    st.markdown("### 🛡️ Fleet Safety & Inclusion Hub")
+    st.markdown("### 🛡️ Fleet Safety & Inclusion Area")
     st.write("Dedicated monitoring and emergency response interface for the Women Dump Truck Drivers initiative at Thar Coal Block II.")
     
     col_a, col_b, col_c = st.columns(3)
